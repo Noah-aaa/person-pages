@@ -108,3 +108,79 @@ footer{
     padding:30px;
     color:#bbb;
 }
+/* ========================= */
+/* translate.js隐藏默认UI */
+/* ========================= */
+
+#translate,
+.translateSelectLanguage,
+.translateSelectLanguage select,
+.languageSelect,
+.languageSelectBox,
+.translateBox{
+    display:none !important;
+    visibility:hidden !important;
+}
+
+/* ========================= */
+/* 语言切换按钮 */
+/* ========================= */
+
+.lang-switch{
+
+    position:fixed;
+
+    top:20px;
+    right:20px;
+
+    width:60px;
+    height:60px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    cursor:pointer;
+
+    z-index:99999;
+
+    transition:.3s;
+}
+
+.lang-switch:hover{
+
+    transform:translateY(-3px) scale(1.05);
+
+    background:rgba(255,255,255,.15);
+}
+
+#lang-text{
+
+    font-size:15px;
+
+    font-weight:bold;
+
+    color:white;
+
+    letter-spacing:1px;
+}
+
+/* 时间 */
+
+#datetime{
+
+    margin-top:10px;
+
+    font-size:18px;
+
+    color:#ddd;
+}

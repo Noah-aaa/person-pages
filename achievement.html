@@ -18,5 +18,20 @@
     </div>
 
 </body>
+<script src="https://res.zvo.cn/translate/translate.js"></script>
+
+<script>
+
+    window.onload = function () {
+
+        if (localStorage.getItem("lang") === "en") {
+
+            translate.to = "english";
+        }
+
+        translate.execute();
+    }
+
+</script>
 
 </html>
