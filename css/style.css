@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Microsoft YaHei",sans-serif;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.7),
+        rgba(0,0,0,.7)
+    ),
+    url("../images/bg.png");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    color:white;
+}
+
+.hero{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    color:#ddd;
+    margin-bottom:15px;
+}
+
+#datetime{
+    font-size:18px;
+}
+
+.container{
+
+    width:95%;
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+    1fr
+    1fr
+    1.5fr;
+
+    gap:20px;
+}
+
+.container section h2{
+    text-align:center;
+    margin-bottom:15px;
+}
+
+.container section h2 a{
+    color:#ffd700;
+    text-decoration:none;
+}
+
+iframe{
+    width:100%;
+    height:600px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:transparent;
+}
+
+.iframe-body{
+    background:none;
+}
+
+.card{
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:15px;
+
+    padding:20px;
+
+    min-height:560px;
+}
+
+.card p{
+    margin:15px 0;
+    line-height:1.8;
+}
+
+.card h3{
+    color:#ffd700;
+    margin-top:15px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#bbb;
+}

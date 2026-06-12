@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>龙腾个人主页</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/moment.js"></script>
+</head>
+
+<body>
+
+    <header class="hero">
+        <h1>龙腾（LongTeng）</h1>
+        <p>本科软件工程 | 研0记录中</p>
+
+        <div id="datetime"></div>
+    </header>
+
+    <main class="container">
+
+        <section>
+            <h2>
+                <a href="achievement.html" target="_blank">
+                    🏆 我的成就
+                </a>
+            </h2>
+
+            <iframe src="achievement.html"></iframe>
+        </section>
+
+        <section>
+            <h2>
+                <a href="rant.html" target="_blank">
+                    💭 吐槽专区
+                </a>
+            </h2>
+
+            <iframe src="rant.html"></iframe>
+        </section>
+
+        <section>
+            <h2>
+                <a href="study.html" target="_blank">
+                    📚 学习心得
+                </a>
+            </h2>
+
+            <iframe src="study.html"></iframe>
+        </section>
+
+    </main>
+
+    <footer>
+        © 2026 LongTeng | Powered by GitHub Pages
+    </footer>
+
+    <script>
+        function updateDateTime() {
+            const now = moment().format('YYYY-MM-DD HH:mm:ss');
+            document.getElementById('datetime').innerHTML = now;
+        }
+
+        updateDateTime();
+        setInterval(updateDateTime, 1000);
+    </script>
+
+</body>
+
+</html>
